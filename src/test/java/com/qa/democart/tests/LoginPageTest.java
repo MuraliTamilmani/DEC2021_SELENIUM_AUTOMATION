@@ -41,7 +41,7 @@ public class LoginPageTest extends BaseTest {
     public void loginTest() {
         AccountsPage accpage = lp.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
         Assert.assertTrue(accpage.logoutLinkDisplayed());
-        System.out.println("Is Logout link exist " +accpage.logoutLinkDisplayed());
+        System.out.println("Is Logout link exist or not " +accpage.logoutLinkDisplayed());
         
     }
 
