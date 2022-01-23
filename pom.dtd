@@ -1,0 +1,17 @@
+<!ELEMENT project (#PCDATA|modelVersion|groupId|artifactId|version|name|url|properties|dependencies|build)*>
+<!ELEMENT modelVersion (#PCDATA)>
+<!ELEMENT groupId (#PCDATA)>
+<!ELEMENT artifactId (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT properties (project.build.sourceEncoding,maven.compiler.source,maven.compiler.target)>
+<!ELEMENT project.build.sourceEncoding (#PCDATA)>
+<!ELEMENT maven.compiler.source (#PCDATA)>
+<!ELEMENT maven.compiler.target (#PCDATA)>
+<!ELEMENT dependencies (dependency+)>
+<!ELEMENT dependency (groupId,artifactId,version)>
+<!ELEMENT build (pluginManagement)>
+<!ELEMENT pluginManagement (plugins)>
+<!ELEMENT plugins (plugin+)>
+<!ELEMENT plugin (artifactId,version)>
