@@ -52,7 +52,7 @@ public class LoginPageTest extends BaseTest {
     {
 
         int totalLinks = lp.getLinks().size();
-        System.out.println("total links are " + totalLinks);
+        System.out.println("total links present are " + totalLinks);
         Assert.assertEquals(totalLinks, Constants.LOGIN_PAGE_MAINLINKS_COUNT);
 
     }
