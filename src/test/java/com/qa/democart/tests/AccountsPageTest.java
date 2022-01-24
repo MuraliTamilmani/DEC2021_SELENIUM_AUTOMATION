@@ -33,7 +33,7 @@ public class AccountsPageTest extends BaseTest {
     @Test
     public void accPageHeaderTest() {
         String accPageHeader = accPage.getAccountPageHeader();
-        System.out.println("Header text is " + accPageHeader);
+        System.out.println("Header text is... " + accPageHeader);
         Assert.assertEquals(accPageHeader, Constants.PAGE_HEADER);
 
     }
